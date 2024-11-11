@@ -1,0 +1,20 @@
+{
+  "TITLE": "Hello",
+  "countryLabel": "Country",
+  "STEP1":"Fill Your Form",
+  "STEP2":"First Name",
+  "LnameLabel":"Last Name",
+  "EmailLabel":"Email Address",
+  "AddressLabel":" Address",
+  "nextButton":"Next",
+  "previousButton":"Previous",
+  "Required":"Required",
+  "AddressTxt":"Fill Your Address",
+  "DoneTxt":"You are Done",
+  "Done":"Done",
+  "Reset":"Reset",
+  "Submit":"Submit",
+  "PhoneNumber":"Phone Number",
+  "Label2":"Address Field"
+
+}

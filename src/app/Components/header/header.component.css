@@ -1,0 +1,13 @@
+.mat-toolbar-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    background-color: #333;
+    color:#f0f0f0;
+}
+.mat-toolbar-row span{
+    font-size: 24px;
+    font-weight: bold;
+    
+}

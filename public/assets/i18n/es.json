@@ -1,0 +1,19 @@
+{
+  "TITLE": "Bonjour",
+  "countryLabel": "Pays",
+  "STEP1": "Rellena tu formulario",
+  "STEP2": "Nombre",
+  "LnameLabel": "Apellido",
+  "EmailLabel": "Dirección de correo electrónico",
+  "AddressLabel": "Dirección",
+  "nextButton": "Botón Siguiente",
+  "previousButton": "Botón Anterior",
+  "Required": "Requerida",
+  "AddressTxt": "Llene su dirección",
+  "DoneTxt": "Ya está",
+  "Done": "Hecho",
+  "Reset": "Restablecimiento",
+  "Submit":"entregar",
+  "PhoneNumber":"Restablecimiento",
+  "Label2":"Campo de dirección"
+}

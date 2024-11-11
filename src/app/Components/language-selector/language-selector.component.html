@@ -1,0 +1,120 @@
+<!-- <div *ngIf="retrievedData() as data1"> -->
+
+<h1>{{ data.country }}</h1>
+<select (change)="changeLanguage($event)">
+  <option value="en">English</option>
+  <option value="es">Spanish</option>
+</select>
+
+<mat-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup" required>
+      <ng-template matStepLabel>{{ data.PersonalDetails1 }}</ng-template>
+
+      <mat-form-field>
+        <mat-label>{{ data.labelFirstName }}</mat-label>
+        <input
+          matInput
+          placeholder="{{ data.labelFirstName }}"
+          formControlName="firstName"
+          required
+        />
+        <mat-error
+          *ngIf="firstFormGroup.get('firstCtrl')?.hasError('required')"
+          >{{ data.required }}</mat-error
+        >
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>{{ data.labelLastName }}</mat-label>
+        <input
+          matInput
+          placeholder="{{ data.labelLastName }}"
+          formControlName="lastName"
+          required
+        />
+        <mat-error
+          *ngIf="firstFormGroup.get('firstCtrl')?.hasError('required')"
+          >{{ data.required }}</mat-error
+        >
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>{{ data.labelEmail }}</mat-label>
+        <input
+          matInput
+          placeholder="{{ data.labelEmail }}"
+          formControlName="email"
+          required
+        />
+        <mat-error
+          *ngIf="firstFormGroup.get('firstCtrl')?.hasError('required')"
+          >{{ data.required }}</mat-error
+        >
+      </mat-form-field>
+
+      <div>
+        <button mat-button matStepperNext [disabled]="firstFormGroup.invalid">
+          {{ data.nextBtn }}
+        </button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup" required>
+            <ng-template matStepLabel>{{ data.label2 }}</ng-template>
+
+      <mat-form-field>
+        <mat-label>{{ data.labelAddress }}</mat-label>
+        <input
+          matInput
+          formControlName="address"
+          placeholder="{{ data.labelAddress }}"
+          required
+        />
+        <mat-error
+          *ngIf="secondFormGroup.get('secondCtrl')?.hasError('required')"
+          >{{ data.required }}
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>{{ data.labelPhone }}</mat-label>
+        <input
+          matInput
+          formControlName="phone"
+          placeholder="{{ data.labelPhone }}"
+          required
+        />
+        <mat-error
+          *ngIf="secondFormGroup.get('secondCtrl')?.hasError('required')"
+          >{{ data.required }}
+        </mat-error>
+      </mat-form-field>
+
+      <div>
+        <button mat-button matStepperPrevious>{{ data.prevBtn }}</button>
+        <button mat-button matStepperNext [disabled]="secondFormGroup.invalid">
+          {{ data.nextBtn }}
+        </button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>{{ data.doneBtn }}</ng-template>
+    <p>{{ data.doneTxt }}</p>
+    <div>
+       <button mat-button matStepperPrevious>{{ data.prevBtn }}</button>
+      <button mat-button (click)="resetForm(stepper)">
+        {{ data.resetBtn }}
+      </button>
+      <button mat-button (click)="submit()" routerLink="/table">{{data.submitBtn}}</button>
+    </div>
+  </mat-step>
+</mat-stepper>
+<br />
+
+<!-- <app-table *ngIf="submitted" [tableData]="retrievedData()" ></app-table> -->
+
+  <!-- </div> -->
+<!-- </div> -->

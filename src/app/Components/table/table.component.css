@@ -1,0 +1,63 @@
+
+
+
+
+/* Table Styling */
+.mat-elevation-z8 {
+    /* background-color: #f0f0f0; */
+    color: #333;
+    border-radius: 5px;
+}
+
+.mat-header-cell {
+    font-weight: bold;
+    background-color: #333 !important;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 12px;
+}
+
+.mat-cell {
+    text-align: center;
+    padding: 10px;
+    color: #f0f0f0;
+    background-color: #444;
+}
+tr.mat-row{
+    background-color: #f0f0f0  !important;
+    color:#333
+}
+tr.mat-row:hover {
+    background-color: #333 !important;
+    color:#f0f0f0;
+}
+
+/* Paginator Styling */
+.mat-paginator {
+    color: #f0f0f0;
+    background-color: #333;
+}
+
+.mat-paginator .mat-button,
+.mat-paginator .mat-icon-button {
+    color: #f0f0f0;
+}
+
+.mat-paginator .mat-button:hover,
+.mat-paginator .mat-icon-button:hover {
+    background-color: #555;
+}
+
+.delete-button {
+    color: #f44336;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: rgba(244, 67, 54, 0.1);
+}
